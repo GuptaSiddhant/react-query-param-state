@@ -1,12 +1,13 @@
 {
-  "name": "react-query-param-state-monorepo",
-  "private": true,
+  "name": "react-query-param-state",
+  "version": "0.1.0",
   "description": "React state management in-sync with URL search query params.",
   "author": "Siddhant Gupta <me@guptasiddhant.com>",
-  "workspaces": [
-    "react-query-param-state",
-    "library",
-    "example"
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +25,15 @@
   },
   "homepage": "https://github.com/guptasiddhant/react-query-param-state#readme",
   "devDependencies": {
+    "@types/node": "^16.7.1",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "@types/react": "^17",
+    "react": "^17"
   }
 }
